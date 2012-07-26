@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <script src="http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"></script>
+   
+   <title>HelloWorld</title>
+   
+   <script>
+    YUI().use('node', function (Y) {
+    
+    var helloWorld = function(e) {
+        alert("Hello World!");
+    }
+    var node = Y.one("#container");
+    node.on("click", helloWorld);
+
+});
+</script>
+</head>
+<body>
+    <div id="container">
+        <p>Show Hello World.</p>
+    </div>
+</body>
+</html>
